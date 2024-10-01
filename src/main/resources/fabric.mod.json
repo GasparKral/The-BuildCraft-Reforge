@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "the-buildcraft-reforge",
+	"version": "${version}",
+	"name": "The BuildCraft Reforge",
+	"description": "The fusion of buildcraft and industrialcraft from the 1.12.2 update, with a refreshed look and feel. THIS IS A NEW CODE MOD, IS JUST BASED ON THE IDEA OF THAT MODS",
+	"authors": [
+		"Gaspar Gómez Kral"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "The BuildCraft Renew © 2024 by Gaspar Kral is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International ",
+	"icon": "assets/the_buildcraft_reforge/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"es.gaspardev.the_buildcraft_reforge.TheBuildCraftReforge"
+		],
+		"client": [
+			"es.gaspardev.the_buildcraft_reforge.TheBuildCraftReforgeClient"
+		],
+		"fabric-datagen": [
+			"es.gaspardev.the_buildcraft_reforge.TheBuildCraftReforgeDataGenerator"
+		]
+	},
+	"mixins": [
+		"the-buildcraft-reforge.mixins.json",
+		{
+			"config": "the-buildcraft-reforge.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

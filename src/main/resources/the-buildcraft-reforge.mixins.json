@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "es.gaspardev.the_buildcraft_reforge.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
